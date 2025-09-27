@@ -9,13 +9,10 @@ phases:
       - npm ci
   build:
     commands:
-      - echo "Starting build..."
+      - echo "Running build..."
       - npm run build --if-present
-      - ls -lart
-      - node -v
 
 artifacts:
   files:
     - '**/*'
   base-directory: build
-  discard-paths: no
